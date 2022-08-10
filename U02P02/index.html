@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+    <style>
+
+        h1{
+            font: 50px tahoma;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: separate;
+            padding: 5px;
+            width: 25%;
+        }
+        table{
+            width: 100%;
+        }
+        img{
+            width: 20%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Practica 2</b></h1>
+
+    <div id="BasicTable">
+        <table>
+            <caption>Tabla Básica</caption>
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Liga</th>
+                    <th>Escudo</th>
+                    <th>Maximo Goleador</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>Boca Juniors</td>
+                    <td>LPF</td>
+                    <td><img src="img/Boca.png"></td>
+                    <td>Martin Palermo</td>
+                </tr>
+                <tr>
+                    <td>River Plate</td>
+                    <td>LPF</td>
+                    <td><img src="img/River.png"></td>
+                    <td>Ángel Labruna</td>
+                </tr>
+                <tr>
+                    <td>Independiente</td>
+                    <td>LPF</td>
+                    <td><img src="img/Independiente.png"></td>
+                    <td>Arsenio Erico</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+    <div id="ComplexTable">
+        <table>
+            <caption>Tabla Compleja</caption>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Link CVG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Grupo 103</td>
+                    <td colspan="2">Mauricio Roldán</td>
+                    <td>18 Años</td>
+                    <td><a href="https://frro.cvg.utn.edu.ar/user/view.php?id=44015&course=737" target="_blank">Perfil CVG</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Francisco Skvosnakov</td>
+                    <td>19 Años</td>
+                    <td><a href="https://frro.cvg.utn.edu.ar/user/view.php?id=44049&course=737" target="_blank">Perfil CVG</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Ervin Töepke</td>
+                    <td>29 Años</td>
+                    <td><a href="https://frro.cvg.utn.edu.ar/user/view.php?id=44029&course=737" target="_blank">Perfil CVG</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tomás Zelante</td>
+                    <td>19 Años</td>
+                    <td><a href="https://frro.cvg.utn.edu.ar/user/view.php?id=44030&course=737" target="_blank">Perfil CVG</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="100%">Integrantes del grupo 103</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <hr>
+    <a href="login.html" target="_blank">Ayudanos a Promocionar</a>
+    <hr>
+    <br><br>
+</body>
+</html>
