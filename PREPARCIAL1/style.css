@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+html,
+body{
+    font-family:'lato', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    height: 50px;
+    padding: 10px;
+}
+
+header nav{
+    flex-grow: 1;
+}
+
+header nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li{
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+header nav ul li a{
+    color: #000000;
+    text-transform: uppercase; 
+    padding: 20px;
+}
+
+header nav ul li a {
+    font-family: 'Lato', sans-serif;
+    padding: 22px;
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid rgb(65, 65, 65);
+    border-radius: 5px;
+}
+
+header nav ul li a.active {
+    border-bottom: 5px solid rgb(65, 65, 65);
+    border-radius: 5px;
+}
+
+header .profile a{
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    display: block;
+}
+
+header .profile svg{
+    width: 40px;
+}
+
+main section{
+    display: flex;
+    min-height: 300px;
+}
+
+
+section.main-image>div {
+    flex: 1;
+}
+
+.img-background{
+    background-image: url("./img/utn-alumnos.jpg");
+}
+
+.img-background h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 100px;
+    font-size: 20px;
+}
+.img-content p {
+    font-size: 18px;
+    padding: 45px;
+}
+
+footer{
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+    color: black;
+    font-family:'lato', sans-serif;
+}
