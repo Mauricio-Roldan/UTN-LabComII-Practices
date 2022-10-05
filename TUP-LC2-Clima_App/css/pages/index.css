@@ -1,0 +1,14 @@
+#section-weather-result{
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 2px 2px 4px 4px rgb(162, 162, 162);
+    border-radius: 25px;
+    text-align: center;
+    line-height: 10px;
+}
+#select{
+    border-radius: 5px;
+    padding: 7px;
+}

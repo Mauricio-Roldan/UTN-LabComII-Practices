@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+
+#success{
+    background-color: #28a745;
+}
+
+#warning{
+    background-color: #ffc107;
+}

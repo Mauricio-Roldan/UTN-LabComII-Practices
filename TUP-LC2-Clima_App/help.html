@@ -7,12 +7,14 @@
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
+    <link rel="icon" href="./img/icon.png">
 </head>
 
 <body>
     <header>
         <h1>
-            <span>Clima App</span>
+            <span><img src="./img/icon.png" width="5%"> Clima App</span>
         </h1>
         <nav>
             <ul>
@@ -31,15 +33,28 @@
             seleccionar la Ciudad en cuestión desde la página <a href="./index.html">Clima</a></p>
         <section>
             <form action="">
-                <label for="name">Nombre: </label>
-                <input type="text" id="name" name="name" placeholder="Ingrese su nombre aqui">
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email">
-                <label for="message">Mensaje: </label>
-                <input type="textarea" id="message" name="message">
-                <button id="clear">Limpiar</button>
+                <div>
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre aqui">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Mensaje: </label>
+                    <input type="textarea" id="message" name="message">
+                </div>
+                <div>
+                    <button id="clear">Limpiar</button>
                 <button>Enviar</button>
+                </div>
             </form>
+        </section>
+        <section>
+            <div class="info">
+                <p>Ingrese un <b>Email</b> válido</p>
+            </div>
         </section>
     </main>
     <footer>

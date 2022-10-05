@@ -36,6 +36,17 @@ header {
     top: 0;
     width: 100%;
     background: var(--color-theme);
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    border-bottom: solid 2px var(--color-active);
+}
+
+button{
+    background-color: var(--color-theme);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
 }
 
 nav>ul {
@@ -63,6 +74,8 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-start-start-radius: 10px ;
+    border-start-end-radius: 10px;
 }
 
 main {
@@ -118,6 +131,17 @@ footer p {
 
 main p {
     margin-bottom: 16px;
+}
+
+.info{
+    max-width: 70%;
+    margin: auto;
+    font-size: small;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #dc3545;
 }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
