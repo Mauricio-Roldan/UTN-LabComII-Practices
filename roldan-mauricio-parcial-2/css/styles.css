@@ -88,4 +88,5 @@ button:active {
     text-align: center;
     color: #efefef;
     font-size: 20px;
+    display: none;
 }

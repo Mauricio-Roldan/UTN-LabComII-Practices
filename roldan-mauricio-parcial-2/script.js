@@ -15,11 +15,12 @@ function calculatePrice() {
         var precio = 1006800.00;
     }
     var cotizacion = precio * cantidad.value;
-    resultado.innerHTML = cotizacion;
-    resultado.style.backgroundColor = "green"
+    resultado.innerHTML = "Cotizacion: $"+cotizacion;
+    resultado.style.backgroundColor = "#25c05b"
 }
 
 function validarDatos() {
+    resultado.style.display="block"
     if (color.value == 0 || capacidad.value == 0) {
         resultado.innerHTML = "Error: Complete todos los campos";
         resultado.style.backgroundColor = "crimson"
