@@ -1,7 +1,30 @@
-div{
+section{
     text-align: center;
 }
 
-.info{
+div{
+    text-align: left;
+}
+
+#mailError{
     width:30%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #dc3545
+}
+
+#botones{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 264px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+textarea{
+    border-radius: 5px;
 }

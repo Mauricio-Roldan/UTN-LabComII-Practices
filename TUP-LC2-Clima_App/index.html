@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/index.js" defer></script>
     <title>Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/pages/index.css">
@@ -31,21 +34,19 @@
             <form action="#">
                 <select name="select" id="select">
                     <option value="" disabled selected>Seleccionar ciudad</option>
-                    <option value="ROSARIO">Rosario</option>
-                    <option value="RAFAELA">Rafaela</option>
                 </select>
-                <button>Consultar</button>
+                <button onclick="mostrarClima();">Consultar</button>
             </form>
         </section>
         <section id="section-weather-result">
             <div class="card">
-                <h3>Ciudad</h3>
+                <h3 id="city">Ciudad</h3>
                 <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="map">
-                <p>Temperatura: #</p>
-                <p>Sensación térmica: #</p>
-                <p>Humedad: #</p>
-                <p>Velocidad del viento: #km/h</p>
-                <p>Presión: # P</p>
+                <p id="tmp">Temperatura: </p>
+                <p id="st">Sensación térmica: </p>
+                <p id="hum">Humedad: </p>
+                <p id="vel">Velocidad del viento: </p>
+                <p id="pres">Presión: </p>
             </div>
         </section>
     </main>

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/add-city.js" defer></script>
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
@@ -31,23 +33,24 @@
             <form action="#">
                 <div>
                     <label for="new-city">Ingrese la ciudad a agregar: </label>
+                    <br>
                     <input type="text" id="new-city" name="new-city">
                 </div>
                 <div>
-                    <button>Agregar</button>
+                    <button id="boton" onclick="addNewCityToLocalStorage()">Agregar</button>
                 </div>
             </form>
         </section>
         <section>
             <form action="#">
                 <div id="success" class="info">
-                    <p>Ciudad agregada con éxito</p>
+                    Ciudad agregada con éxito
                 </div>
                 <div id="error" class="info">
-                    <p>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
+                    Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar
                 </div>
                 <div id="warning" class="info">
-                    <p>La ciudad ingresada ya se encuentra almacenada</p>
+                    La ciudad ingresada ya se encuentra almacenada
                 </div>
             </form>
         </section>

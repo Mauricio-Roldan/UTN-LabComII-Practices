@@ -1,4 +1,4 @@
-body{
+div{
     text-align: center;
 }
 
@@ -8,4 +8,12 @@ body{
 
 #warning{
     background-color: #ffc107;
+}
+
+#error{
+    background-color: #dc3545
+}
+
+button{
+    margin-top: 10px;
 }

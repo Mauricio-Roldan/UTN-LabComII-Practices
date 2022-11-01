@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/help.js"defer></script>
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
@@ -35,25 +37,28 @@
             <form action="">
                 <div>
                     <label for="name">Nombre: </label>
+                    <br>
                     <input type="text" id="name" name="name" placeholder="Ingrese su nombre aqui">
                 </div>
                 <div>
                     <label for="email">Email: </label>
+                    <br>
                     <input type="email" id="email" name="email">
                 </div>
                 <div>
                     <label for="message">Mensaje: </label>
-                    <input type="textarea" id="message" name="message">
+                    <br>
+                    <textarea name="Mensaje" id="" cols="30" rows="10" class="input-text"></textarea>
                 </div>
-                <div>
+                <div id="botones">
                     <button id="clear">Limpiar</button>
-                <button>Enviar</button>
+                    <button>Enviar</button>
                 </div>
             </form>
         </section>
         <section>
-            <div class="info">
-                <p>Ingrese un <b>Email</b> válido</p>
+            <div id="mailError" class="info">
+                Ingrese un <b>Email</b> válido
             </div>
         </section>
     </main>

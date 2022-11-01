@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <script src="/js/script.js"></script>
+    <link rel="icon" href="./img/EPE.png">
+</head>
+
+<body>
+    <nav>
+        <h1><img src="./img/logo-epe-empresa.png" width="10%">Calculadora EPE</h1>
+    </nav>
+    <hr>
+    <form action="#">
+        <div class="formulario">
+            <p>Tipo de Usuario</p>
+            <div id="tipoUsuario">
+                <label class="form-check-label" for="residencial">
+                    <input class="form-check-input" type="radio" name="usuario" id="residencial" value="0.21" onchange="validarUsuario();">  Residencial
+                </label>
+                <label class="form-check-label" for="industrial">
+                    <input class="form-check-input" type="radio" name="usuario" id="industrial" value="0.27" onchange="validarUsuario();">  Industrial
+                </label>
+            </div>
+            <p class="validation" id="errorUser"></p>
+        </div>
+        <div class="form-input">
+            <label class="form-label" for="zona">Zona de Domicilio</label>
+            <select class="form-select" name="zona" id="zona" onchange="validarZona();">
+                <option selected disabled>Seleccionar</option>
+                <option value="5.80">Distrito Centro</option>
+                <option value="5.40">Distrito Sur</option>
+                <option value="5.35">Distrito Oeste</option>
+                <option value="5.60">Distrito Norte</option>
+            </select>
+            <p class="validation" id="errorZone"></p>
+        </div>
+
+        <div class="form-input">
+            <label class="form-label" for="consumo">Consumo mensual en Kwh</label>
+            <input class="form-control" type="number" name="consumo" id="consumo" onchange="validarConsumo();" min="1">
+            <p class="validation" id="errorConsume"></p>
+        </div>
+        
+        <div class="form-input">
+            <input class="button" type="button" value="Calcular Consumo" id="button" name="button" onclick="validarFormulario();">
+            <p id="errorForm"></p>
+        </div>
+    </form>
+    <hr>
+    <main>
+        <section class="result-hide" id="totalCost">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Resultado: </h5>
+                <p class="card-text" id="result"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
